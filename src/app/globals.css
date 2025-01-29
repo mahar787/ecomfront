@@ -1,0 +1,67 @@
+@import "nprogress/nprogress.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Customize progress bar */
+#nprogress .bar {
+  background: #0070f3; /* Progress bar ka color */
+  height: 3px; /* Progress bar ki height */
+}
+:root {
+  --background: #ffffff;
+  --foreground: rgb(17 24 39);
+}
+nav {
+  overflow-x: auto;
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+}
+
+nav::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+}
+.linking:hover {
+  transform: translateY(-6px);
+  transition: all ease-in-out 0.2s;
+}
+.mainBgImg {
+  background-image: url(../../public/bg4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 11px; /* Scrollbar width */
+}
+
+/* Scrollbar Track (background) */
+::-webkit-scrollbar-track {
+  background: #1e293b; /* Dark background */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Scrollbar Thumb (slider part) */
+::-webkit-scrollbar-thumb {
+  background: #4a4b4a; /* Green slider */
+  border-radius: 6px; /* Rounded corners */
+  border: 2px solid #1e293b; /* Gap between thumb and track */
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #474747; /* Darker green when hovered */
+}
+
+.gridTable {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto;
+}
